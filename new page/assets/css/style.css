@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav {
+    background-color: transparent;
+    position: absolute !important;
+    top: 0;
+    width:85%;
+    z-index:999;
+ }
+
+.navbar{
+    padding: 0 !important;
+}
+.my-nav .navbar-nav {
+    margin-right: 80px;
+    padding:0 !important;
+}
+
+
+.my-nav .navbar-brand {
+    font-size: 40px;
+    line-height: 70px;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Damion";
+    text-align: center;
+    padding:0 !important
+}
+
+.my-nav .nav-link {
+    font-size: 18px;
+    color: #fff !important;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin-right: 20px;
+    width: 82px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 0 0 5px 5px;
+    
+
+}
+
+.my-nav .nav-link:hover {
+    color: #fff;
+}
+
+.my-nav #home.active {
+    background-color: #74c7d5
+}
+
+.my-nav #services.active {
+    background-color: #df5c64;
+}
+
+.my-nav #about.active {
+    background-color: #91778e;
+}
+
+.my-nav #work.active {
+    background-color: #a1ca6c;
+}
+
+.my-nav #contacts.active {
+    background-color: #82c8bd;
+}
+
+.carousel {
+    height: 100vh;
+    width:100vw
+
+}
+
+.carousel-item img {
+    height: 100vh;
+    width:100vw
+}
+
+.carousel .img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 65%;
+    height: 22% ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .img-overlay h1 {
+    font-size:60px;
+    line-height: 58px;
+    color: #74c7d5;
+    font-weight: 300;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+
+.carousel .img-overlay span {
+    font-size: 60px;
+    line-height: 30px;
+    color: #74c7d5;
+    font-weight: 300;
+    font-family: "Lato";
+    margin-left: 200px;
+    text-transform: lowercase;
+}
+
+.carousel .img-overlay h2 {
+    font-size: 128px;
+    line-height: 128px;
+    color: #74c7d5;
+    font-weight: 900;
+    font-family: "Lato";
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.carousel .slide-btn {
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.carousel .slide-btn.active {
+    background-color: #74c7d5;
+}
+
+.services {
+    background-image: url(../img/home_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.section-heading h1 {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.section-heading h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+
+.section-heading p {
+    font-size: 14px;
+    color: #ffcccf;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services-blog {
+    width: 240px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: rgb(195, 81, 88, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 10px 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.services-blog .logo {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    outline: 5px solid white;
+    outline-offset: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c35158;
+    font-size: 45px;
+}
+
+.services-blog h2 {
+    font-size: 30px;
+    margin: 25px 0 35px 0;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+
+.services-blog p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fefefe;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.about {
+    background-image: url(../img/about_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .section-heading p {
+    color: #e6d1e3;
+}
+
+.about .team {
+    width: 200px;
+    height: 35px;
+    text-transform: uppercase;
+    background-color: #a1ca6c;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    position: relative;
+}
+
+.about .team h5 {
+    font-size: 20px;
+    line-height: 35px;
+    color: #ffffff;
+    font-weight: 900;
+    font-family: "Lato";
+}
+
+.about .team::before {
+    content: '';
+    border: 15px solid #a1ca6c;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    bottom: -23%;
+    left: 45%;
+    transform: rotate(45deg);
+}
+
+.about-blog {
+    width: 240px;
+    border-radius: 5px;
+    background-color: rgb(94, 77, 92, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px 20px;
+    margin: 40px auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.about-blog .img-block {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    outline: 2px solid #c7b6c5;
+    outline-offset: 2px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    font-size: 80px;
+    overflow-x: hidden;
+    color: rgb(94, 77, 92, 0.5)
+}
+
+.about-blog h3 {
+    font-size: 25px;
+    color: #c7b6c5;
+    font-weight: 900;
+    font-family: "Lato";
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+}
+
+.about-blog p {
+    font-size: 14px;
+    color: #a1ca6c;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.about-blog a {
+    border-radius: 50%;
+    background-color: #a1859e;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.about-blog:hover .img-block {
+    outline-color: #df5c64;
+    color: #df5c64
+}
+
+.about-blog:hover p {
+    color: #df5c64
+}
+
+.about-blog:hover .f {
+    background-color: #4f689e
+}
+
+.about-blog:hover .t {
+    background-color: #74c7d5;
+}
+
+.about-blog:hover .g {
+    background-color: #df5c64;
+}
+
+.about-blog:hover .l {
+    background-color: #3e61af;
+}
+
+.work {
+    background-image: url(../img/about_bg\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.work .menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    border-left: none;
+    border-right: none;
+    padding: 15px 5px;
+}
+
+.menu-bar h3 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+
+.menu-bar nav a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Lato";
+    transition: all .5s ease-in-out;
+
+}
+
+.menu-bar .active{
+    background-color:#f5c149 !important
+}
+.menu-bar nav a:hover {
+    color: #181f0f
+}
+
+.portfolio-img .card {
+    
+    border: none;
+    outline: none;
+    margin:auto;
+    width: 250px;
+    height: 220px;
+    position: relative;
+    cursor:pointer;
+    transition: all .5 s ease-in-out
+}
+
+.portfolio-img h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #727272;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.portfolio-img .card-footer {
+    position: relative;
+}
+
+.portfolio-img .card::before {
+    content: '';
+    border: 20px solid #fff;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    bottom: 20%;
+    left: 45%;
+    transform: rotate(45deg);
+
+}
+
+.portfolio-img .plus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+.portfolio-img .card:hover .plus {
+    display: flex;
+}
+
+.contact {
+    background-image: url(../img/about_bg\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+
+}
+
+.contact .address-block h4 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Lato";
+  
+}
+
+.contact .address-block h5 {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 20px;
+    color: #c0dfda;
+    font-weight: 700;
+    font-family: "Lato";
+}
+
+.contact .address-block span {
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.contact .address-block ul {
+    margin-top: 40px;
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 21px;
+    color: #d0efea;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.contact .input-block h4 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Lato";
+    margin-bottom: 30px;
+}
+
+.contact .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact input {
+    width: 45%;
+    border: none;
+    overflow: none;
+    background-color: #68a097;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in
+}
+
+.contact textarea {
+    width: 100%;
+    height: 50%;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #68a097;
+    transition: all 0.5s ease-in
+}
+
+.contact .btn {
+    width: 50%;
+    height:20%;
+    border-radius: 4px;
+    background-color: #df5c64;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-left: 25%;
+    margin-top: 35px;
+    box-shadow: #df5c64 2px 3px;
+}
+
+.contact input:hover, .contact textarea:hover {
+    background-color: white;
+}
+
+footer {
+    background-color: #68a097;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0
+}
+
+footer a {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+    background-color: #82c8bd;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+footer a:hover {
+    color: white;
+}
